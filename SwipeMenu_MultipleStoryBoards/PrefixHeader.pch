@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  SwipeMenu_MultipleStoryBoards
+//
+//  Created by Vy Systems - iOS1 on 2/5/15.
+//  Copyright (c) 2015 Vy Systems - iOS1. All rights reserved.
+//
+
+#ifndef SwipeMenu_MultipleStoryBoards_PrefixHeader_pch
+#define SwipeMenu_MultipleStoryBoards_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MFSideMenu.h"
+
+#import "PureLayout.h"
+#endif
+
+#endif

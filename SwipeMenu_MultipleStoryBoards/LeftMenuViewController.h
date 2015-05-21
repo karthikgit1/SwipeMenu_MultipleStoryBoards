@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LeftMenuViewController.h
 //  SwipeMenu_MultipleStoryBoards
 //
 //  Created by Vy Systems - iOS1 on 2/5/15.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSArray *sampleData;
+@interface LeftMenuViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *tv1;
 
 @end
-
