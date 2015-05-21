@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Other View Controller-->
+        <scene sceneID="RU5-fA-5OL">
+            <objects>
+                <viewController storyboardIdentifier="OtherViewController" id="SOG-JV-eS1" customClass="OtherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YtP-RG-vNK"/>
+                        <viewControllerLayoutGuide type="bottom" id="RAm-mQ-Ukq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uIt-ZS-5vp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTj-dH-Wvj">
+                                <rect key="frame" x="0.0" y="85" width="320" height="395"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57831191770000001" green="1" blue="0.33329211419999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="wv1" destination="wTj-dH-Wvj" id="DP4-mp-Uu1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txj-E3-uCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153" y="364"/>
+        </scene>
+        <!--Bubble Chat View Controller-->
+        <scene sceneID="kPl-qe-lUS">
+            <objects>
+                <viewController storyboardIdentifier="BubbleChatViewController" id="j8x-rY-zEb" customClass="BubbleChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VOn-Cl-ndj"/>
+                        <viewControllerLayoutGuide type="bottom" id="80R-hW-PZq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M5j-rK-mTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKT-Gx-p6t">
+                                <rect key="frame" x="144" y="209" width="68" height="30"/>
+                                <color key="backgroundColor" red="0.40409444166927633" green="0.66041703337222579" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnToggle:" destination="j8x-rY-zEb" eventType="touchUpInside" id="qCO-7T-42P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215688589999999" green="0.64705884459999996" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpQ-3S-psk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="249"/>
+        </scene>
+    </scenes>
+</document>

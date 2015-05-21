@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Semi Transparent View Controller-->
+        <scene sceneID="NeE-df-uBP">
+            <objects>
+                <viewController storyboardIdentifier="SemiTransparentViewController" id="avs-RG-nRq" customClass="SemiTransparentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pAb-tM-4hJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="LOD-pz-vR9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e9F-Pk-C9S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Vt-fF-EXV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-Ln-Z8L">
+                                <rect key="frame" x="139" y="277" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5id-or-SAM">
+                                <rect key="frame" x="111" y="225" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view alpha="0.19999999999999968" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6s-jI-T7N">
+                                <rect key="frame" x="75" y="202" width="160" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Vt-fF-EXV" secondAttribute="trailing" id="G8R-mW-op8"/>
+                            <constraint firstItem="LOD-pz-vR9" firstAttribute="top" secondItem="5Vt-fF-EXV" secondAttribute="bottom" id="I0S-H5-mGs"/>
+                            <constraint firstItem="5Vt-fF-EXV" firstAttribute="leading" secondItem="e9F-Pk-C9S" secondAttribute="leading" id="Mzg-c3-Db8"/>
+                            <constraint firstItem="5Vt-fF-EXV" firstAttribute="top" secondItem="e9F-Pk-C9S" secondAttribute="top" id="PFO-ge-qCm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKN-L0-dUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="262"/>
+        </scene>
+        <!--Custom Alert View View Controller-->
+        <scene sceneID="1Yy-sm-wg9">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertViewViewController" id="n5g-TA-ahK" customClass="CustomAlertViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="asU-7t-hYj"/>
+                        <viewControllerLayoutGuide type="bottom" id="svY-ob-f9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kh2-e0-7Ri">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ib-OF-0fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3.png" width="300" height="168"/>
+    </resources>
+</document>
